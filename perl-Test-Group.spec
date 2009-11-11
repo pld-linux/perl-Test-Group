@@ -8,13 +8,13 @@
 Summary:	Test::Group - Group together related tests in a test suite
 #Summary(pl.UTF-8):	
 Name:		perl-Test-Group
-Version:	0.14
+Version:	0.15
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7154698c6251fbc8325146855c628c09
+# Source0-md5:	ecc07c25763203ba2308a213a0a7dbfa
 URL:		http://search.cpan.org/dist/Test-Group/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
