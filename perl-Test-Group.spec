@@ -8,18 +8,19 @@
 Summary:	Test::Group - Group together related tests in a test suite
 #Summary(pl.UTF-8):	
 Name:		perl-Test-Group
-Version:	0.15
+Version:	0.18
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ecc07c25763203ba2308a213a0a7dbfa
+# Source0-md5:	4dc6d510b1165776e8f0a26d0af8e62c
 URL:		http://search.cpan.org/dist/Test-Group/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-File-Slurp
+BuildRequires:	perl-Test-Cmd
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,5 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Test/*.pm
+%{perl_vendorlib}/Test/Group
+
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
