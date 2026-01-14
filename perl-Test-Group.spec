@@ -8,7 +8,7 @@ Summary:	Test::Group - Group together related tests in a test suite
 #Summary(pl.UTF-8):	
 Name:		perl-Test-Group
 Version:	0.18
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
